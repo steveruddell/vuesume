@@ -1,0 +1,161 @@
+{
+  "bio": {
+    "firstname": "Dennis",
+    "lastname": "Russell",
+    "brief": "Your brief intro goes here.",
+    "image": "./static/profile.example.jpg",
+    "tiles": {
+      "one": {
+        "title": "Location",
+        "value": "Sendai, Japan"
+      },
+      "two": {
+        "title": "Hometown",
+        "value": "Philadelphia"
+      },
+      "three": {
+        "title": "Line",
+        "value": "<enter here>"
+      },
+      "four": {
+        "title": "Skype",
+        "value": "<enter here>"
+      }
+    }
+  },
+  "websites": [
+    {
+      "name": "Twitter",
+      "profile": "http://twitter.com/rasserudenisu"
+    },
+    {
+      "name": "Facebook",
+      "profile": ""
+    },
+    {
+      "name": "LinkedIn",
+      "profile": "http://linkedin.com/rasserudenisu"
+    },
+    {
+      "name": "Github",
+      "profile": "http://github.com/rasserudenisu"
+    }
+  ],
+  "honors": [
+    {
+      "name": "Scholarship",
+      "start": 2015,
+      "end": 2016,
+      "auspices": "Whatever University",
+      "description": "Received during my tenure as a graduate student."
+    },
+    {
+      "name": "Scholarship",
+      "start": 2014,
+      "end": 2014,
+      "auspices": "Something University",
+      "description": "Another one."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "description": "I like to drink it.",
+      "value": 90,
+      "icon": "fa-coffee"
+    },
+    {
+      "name": "Javascript",
+      "description": "Spaghetti code and update anxiety.",
+      "value": 75,
+      "icon": "fa-bug"
+    },
+    {
+      "name": "Swift",
+      "description": "Good stuff.",
+      "value": 75,
+      "icon": "fa-apple"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "description": "Native Speaker",
+      "value": 90,
+      "icon": "US"
+    },
+    {
+      "name": "Japanese",
+      "description": "University & self-taught.",
+      "value": 85,
+      "icon": "JP"
+    },
+    {
+      "name": "German",
+      "description": "I wish I could speak this.",
+      "value": 65,
+      "icon": "DE"
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Vuesume",
+      "start": 2017,
+      "tagline": "Vue CV Project",
+      "description": "Vue, Bulma, and others.",
+      "website": "https://github.com/rasserudenisu/vuesume"
+    },
+    {
+      "name": "Aoba (Android)",
+      "start": 2013,
+      "tagline": "Japanese - English Dictionary",
+      "description": "My super amazing dictionary app for Android devices. Native Java app. Database in Realm. Relies on RxAndroid for querying. Extensive use of major libraries.",
+      "website": "https://play.google.com/store/apps/details?id=ja.bito.aobaapp"
+    }
+  ],
+  "employment": [
+    {
+      "name": "Google",
+      "start": 2015,
+      "location": "San Fransisco",
+      "position": "Customer Service Representative",
+      "description": "And what a job it was. But not really.",
+      "website": "http://google.com"
+    }
+  ],
+  "education": [
+    {
+      "name": "Super Sugoi University",
+      "start": 2014,
+      "location": "Philadelphia, Pennsylvania",
+      "degree": "MA",
+      "major": "Thumb Twiddling",
+      "website": "http://villanova.edu",
+      "description": "Expert Time Wasting.",
+      "coursework": [
+        {
+          "name": "Shakespeare",
+          "number": "250",
+          "description": "Hamlet or Romeo & Juliet?"
+        }
+      ]
+    },
+    {
+      "name": "Super Lame University",
+      "end": 2012,
+      "start": 2008,
+      "location": "Philadelphia, Pennsylvania",
+      "degree": "BA",
+      "major": "Brow Wiping",
+      "website": "http://villanova.edu",
+      "description": "Fun and games from hell to breakfast.",
+      "coursework": [
+        {
+          "name": "Chaucer",
+          "number": "150",
+          "description": "The Chef's Tale or the Nun's Tale?"
+        }
+      ]
+    }
+  ]
+}
