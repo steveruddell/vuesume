@@ -26,7 +26,7 @@
   "websites": [
     {
       "name": "Twitter",
-      "profile": "http://twitter.com/rasserudenisu"
+      "profile": "http://twitter.com/<your bio here>"
     },
     {
       "name": "Facebook",
@@ -34,7 +34,7 @@
     },
     {
       "name": "LinkedIn",
-      "profile": "http://linkedin.com/rasserudenisu"
+      "profile": "http://linkedin.com/<your bio here>"
     },
     {
       "name": "Github",
@@ -104,13 +104,6 @@
       "tagline": "Vue CV Project",
       "description": "Vue, Bulma, and others.",
       "website": "https://github.com/rasserudenisu/vuesume"
-    },
-    {
-      "name": "Aoba (Android)",
-      "start": 2013,
-      "tagline": "Japanese - English Dictionary",
-      "description": "My super amazing dictionary app for Android devices. Native Java app. Database in Realm. Relies on RxAndroid for querying. Extensive use of major libraries.",
-      "website": "https://play.google.com/store/apps/details?id=ja.bito.aobaapp"
     }
   ],
   "employment": [
@@ -130,7 +123,7 @@
       "location": "Philadelphia, Pennsylvania",
       "degree": "MA",
       "major": "Thumb Twiddling",
-      "website": "http://villanova.edu",
+      "website": "http://bignameuni.edu",
       "description": "Expert Time Wasting.",
       "coursework": [
         {
@@ -147,7 +140,7 @@
       "location": "Philadelphia, Pennsylvania",
       "degree": "BA",
       "major": "Brow Wiping",
-      "website": "http://villanova.edu",
+      "website": "http://bignameuni.edu",
       "description": "Fun and games from hell to breakfast.",
       "coursework": [
         {

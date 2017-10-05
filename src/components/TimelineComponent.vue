@@ -20,7 +20,7 @@ export default {
 }
 .circle {
   border-radius: 15px;
-  border: 1px #bfbfbf dashed;
+  border: 1px #7a7a7a dashed;
   width: 15px;
   height: 15px;
   margin-left: 4px;
