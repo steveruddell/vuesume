@@ -19,7 +19,11 @@
 <script>
 import TimelineComponent from './TimelineComponent'
 export default {
-  props: ['honors'],
+  data () {
+    return {
+      honors: this.$store.getters.getSection('honors')
+    }
+  },
   components: {'TimelineComponent': TimelineComponent}
 }
 </script>

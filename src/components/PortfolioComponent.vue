@@ -27,7 +27,11 @@
 <script>
 import TimelineComponent from './TimelineComponent'
 export default {
-  props: ['portfolio'],
+  data () {
+    return {
+      portfolio: this.$store.getters.getSection('portfolio')
+    }
+  },
   components: {'TimelineComponent': TimelineComponent}
 }
 </script>

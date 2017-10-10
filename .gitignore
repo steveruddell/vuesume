@@ -1,12 +1,11 @@
 .DS_Store
 node_modules/
 dist/
-static/cv.json
-static/profile.jpg
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vscode
+real.*
 
 # Editor directories and files
 .idea

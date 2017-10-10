@@ -17,7 +17,11 @@
 <script>
 var Flags = require('emoji-flags')
 export default {
-  props: ['languages'],
+  data () {
+    return {
+      languages: this.$store.getters.getSection('languages')
+    }
+  },
   methods: {
     getFlag (icon) {
       return Flags.countryCode(icon).emoji

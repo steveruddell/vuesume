@@ -1,39 +1,47 @@
 <template>
-  <div class="content">
+  <div class="header-view">
+    <div class="columns is-multiline is-desktop">
 
-    <!-- desktop layout -->
-    <div class="is-hidden-mobile tile is-ancestor">
-
-      <article class="tile is-child is-4">
-        <figure class="image profile-image is-128x128 is-pulled-left" v-if="bio.image">
-          <img :src="bio.image" alt="profile">
-        </figure>
-        <p class="title"><span class="has-text-weight-light">{{bio.firstname}}</span> <span>{{bio.lastname}}</span></p>
-        <p class="subtitle">{{bio.brief}}</p>
-      </article>
-
-      <div class="tile is-2 is-vertical">
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.one.title}}</p>
-          <p class="subtitle">{{bio.tiles.one.value}}</p>
-        </div>
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.two.title}}</p>
-          <p class="subtitle">{{bio.tiles.two.value}}</p>
-        </div>
-      </div>
-      <div class="tile is-2 is-vertical">
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.three.title}}</p>
-          <p class="subtitle">{{bio.tiles.three.value}}</p>
-        </div>
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.four.title}}</p>
-          <p class="subtitle">{{bio.tiles.four.value}}</p>
+      <div class="column is-4">
+        <div class="columns">
+          <div class="column is-6">
+            <figure class="image profile-image is-128x128" v-if="bio.image">
+              <img :src="bio.image" alt="profile">
+            </figure>
+          </div>
+          <div class="column is-6">
+            <p class="title"><span class="has-text-weight-light">{{bio.firstname}}</span> <span>{{bio.lastname}}</span></p>
+            <p class="subtitle">{{bio.brief}}</p>
+          </div>
         </div>
       </div>
 
-      <div class="tile is-4 is-child">
+      <div class="column is-4">
+        <div class="columns">
+          <div class="column is-6">
+            <div class="column">
+              <p class="heading">{{bio.tiles.one.title}}</p>
+              <p class="subtitle">{{bio.tiles.one.value}}</p>
+            </div>
+            <div class="column">
+              <p class="heading">{{bio.tiles.two.title}}</p>
+              <p class="subtitle">{{bio.tiles.two.value}}</p>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="column">
+              <p class="heading">{{bio.tiles.three.title}}</p>
+              <p class="subtitle">{{bio.tiles.three.value}}</p>
+            </div>
+            <div class="column">
+              <p class="heading">{{bio.tiles.four.title}}</p>
+              <p class="subtitle">{{bio.tiles.four.value}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4">
         <div class="tags">
           <a class="tag is-info is-medium" v-for="site in websites" :href="site.profile">
             <i class="fa" v-bind:class="getIcon(site.profile)"> {{site.name}}</i>
@@ -42,55 +50,19 @@
       </div>
     </div>
 
-    <!-- mobile layout -->
-    <div class="is-hidden-desktop is-hidden-tablet tile is-ancestor is-vertical">
-
-      <div class="tile is-parent is-vertical">
-      <div class="tile is-child">
-        <figure class="image profile-image is-128x128 is-pulled-left" v-if="bio.image">
-          <img :src="bio.image">
-        </figure>
-        <p class="title"><span class="has-text-weight-light">{{bio.firstname}}</span> <span>{{bio.lastname}}</span></p>
-        <p class="subtitle">{{bio.brief}}</p>
-      </div>
-      <br>
-      <div class="tile is-parent is-vertical">
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.one.title}}</p>
-          <p class="subtitle">{{bio.tiles.one.value}}</p>
-        </div>
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.two.title}}</p>
-          <p class="subtitle">{{bio.tiles.two.value}}</p>
-        </div>
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.three.title}}</p>
-          <p class="subtitle">{{bio.tiles.three.value}}</p>
-        </div>
-        <div class="tile is-child">
-          <p class="heading">{{bio.tiles.four.title}}</p>
-          <p class="subtitle">{{bio.tiles.four.value}}</p>
-        </div>
-      </div>
-      <br>
-      <div class="tile is-child">
-        <div class="tags">
-          <a class="tag is-info is-medium" v-for="site in websites" :href="site.profile">
-            <i class="fa" v-bind:class="getIcon(site.profile)"> {{site.name}}</i>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-</div>
+  </div>
 </template>
 
 <script>
 import _ from 'lodash'
 export default {
   name: 'headerview',
-  props: ['bio', 'websites'],
+  data () {
+    return {
+      bio: this.$store.getters.getSection('bio'),
+      websites: this.$store.getters.getSection('websites')
+    }
+  },
   methods: {
     getIcon (profile) {
       if (_.includes(profile, 'twitter')) {
@@ -109,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+.header-view {
+  margin-bottom: 1.5em;
+}
 .level-item:not(level-item:last-child) {
   padding-bottom: 1em;
 }

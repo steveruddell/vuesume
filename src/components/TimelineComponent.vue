@@ -1,16 +1,31 @@
 <template>
 
 <div class="timeline">
-  <div class="tag is-medium is-info" v-if="this.end">{{this.end}}</div>
+  <div class="tag is-medium is-info" v-if="this.end"><span class="hint--bottom" :aria-label="endTooltip">{{endYear}}</span></div>
   <div class="circle" v-if="!this.end"></div>
   <div class="timeline-bar" v-if="(this.end && this.start && (this.end != this.start)) || (!this.end && this.start)">000</div>
-  <div class="tag is-medium is-info"v-if="this.start && (this.end != this.start)">{{this.start}}</div>
+  <div class="tag is-medium is-info"v-if="this.start && (this.end != this.start)"><span class="hint--bottom" :aria-label="startTooltip">{{startYear}}</span></div>
 </div>
 </template>
 
 <script>
+import moment from 'moment'
 export default {
-  props: ['start', 'end']
+  props: ['start', 'end'],
+  computed: {
+    endYear () {
+      return moment(this.end).year()
+    },
+    startYear () {
+      return moment(this.start).year()
+    },
+    startTooltip () {
+      return moment(this.start).format('MMMM Do')
+    },
+    endTooltip () {
+      return moment(this.start).format('MMMM Do')
+    }
+  }
 }
 </script>
 

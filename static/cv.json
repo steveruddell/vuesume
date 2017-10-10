@@ -3,7 +3,8 @@
     "firstname": "Dennis",
     "lastname": "Russell",
     "brief": "Your brief intro goes here.",
-    "image": "./static/profile.example.jpg",
+    "biography": "Personal biography or whatever goes here. HTML supported.",
+    "image": "./static/profile.jpg",
     "tiles": {
       "one": {
         "title": "Location",
@@ -44,15 +45,15 @@
   "honors": [
     {
       "name": "Scholarship",
-      "start": 2015,
-      "end": 2016,
+      "start": "2015-04",
+      "end": "2016-05",
       "auspices": "Whatever University",
       "description": "Received during my tenure as a graduate student."
     },
     {
       "name": "Scholarship",
-      "start": 2014,
-      "end": 2014,
+      "start": "2014-01",
+      "end": "2014-06",
       "auspices": "Something University",
       "description": "Another one."
     }
@@ -100,7 +101,7 @@
   "portfolio": [
     {
       "name": "Vuesume",
-      "start": 2017,
+      "start": "2017-09",
       "tagline": "Vue CV Project",
       "description": "Vue, Bulma, and others.",
       "website": "https://github.com/rasserudenisu/vuesume"
@@ -109,8 +110,8 @@
   "employment": [
     {
       "name": "Google",
-      "start": 2015,
-      "location": "San Fransisco",
+      "start": "2015-06",
+      "location": "San Francisco",
       "position": "Customer Service Representative",
       "description": "And what a job it was. But not really.",
       "website": "http://google.com"
@@ -119,7 +120,7 @@
   "education": [
     {
       "name": "Super Sugoi University",
-      "start": 2014,
+      "start": "2014-06",
       "location": "Philadelphia, Pennsylvania",
       "degree": "MA",
       "major": "Thumb Twiddling",
@@ -135,8 +136,8 @@
     },
     {
       "name": "Super Lame University",
-      "end": 2012,
-      "start": 2008,
+      "end": "2012-12",
+      "start": "2008-08",
       "location": "Philadelphia, Pennsylvania",
       "degree": "BA",
       "major": "Brow Wiping",

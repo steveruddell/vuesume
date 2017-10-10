@@ -1,12 +1,11 @@
 # Vuesume
 
-> A Vue.js curriculum vitae and resume project.
+A Vue.js curriculum vitae and resume project.
 
 ## Features
 
 * All the standard CV whirligigs.
-* Timeline view for education and employment.
-* Easy to arrange sections - and no limit to the number of items permissible within each.
+* Timeline view for all CV components.
 
 ## Build Setup
 
@@ -20,4 +19,4 @@ npm run dev
 npm run build
 
 ## Publishing
-Edit static/cv.example.json to your liking. Don't forget your profile picture.
+Edit cv.json to your liking. Don't forget your profile picture.

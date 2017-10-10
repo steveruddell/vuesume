@@ -27,7 +27,11 @@
 <script>
 import TimelineView from './TimelineComponent'
 export default {
-  props: ['employment'],
+  data () {
+    return {
+      employment: this.$store.getters.getSection('employment')
+    }
+  },
   components: {'TimelineView': TimelineView}
 }
 </script>

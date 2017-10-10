@@ -16,7 +16,11 @@
 
 <script>
 export default {
-  props: ['skills']
+  data () {
+    return {
+      skills: this.$store.getters.getSection('skills')
+    }
+  }
 }
 </script>
 

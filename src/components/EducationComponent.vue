@@ -38,7 +38,11 @@
 <script>
 import TimelineView from './TimelineComponent'
 export default {
-  props: ['edu'],
+  data () {
+    return {
+      edu: this.$store.getters.getSection('education')
+    }
+  },
   components: {'TimelineView': TimelineView},
   methods: {
     getImage (url, type) {
