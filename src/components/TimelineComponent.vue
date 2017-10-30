@@ -1,10 +1,10 @@
 <template>
 
 <div class="timeline">
-  <div class="tag is-medium is-info" v-if="this.end"><span class="hint--bottom" :aria-label="endTooltip">{{endYear}}</span></div>
+  <div class="tag is-medium" v-if="this.end"><span class="hint--bottom" :aria-label="endTooltip">{{endYear}}</span></div>
   <div class="circle" v-if="!this.end"></div>
   <div class="timeline-bar" v-if="(this.end && this.start && (this.end != this.start)) || (!this.end && this.start)">000</div>
-  <div class="tag is-medium is-info"v-if="this.start && (this.end != this.start)"><span class="hint--bottom" :aria-label="startTooltip">{{startYear}}</span></div>
+  <div class="tag is-medium"v-if="this.start && (this.end != this.start)"><span class="hint--bottom" :aria-label="startTooltip">{{startYear}}</span></div>
 </div>
 </template>
 
@@ -23,15 +23,19 @@ export default {
       return moment(this.start).format('MMMM Do')
     },
     endTooltip () {
-      return moment(this.start).format('MMMM Do')
+      return moment(this.end).format('MMMM Do')
     }
   }
 }
 </script>
 
 <style scoped>
+.tag {
+  color: white;
+  background-color: hsl(217, 45%, 45%);
+}
 .tag:hover {
-  background-color: #235ebc;
+  background-color: hsl(217, 40%, 40%);
 }
 .circle {
   border-radius: 15px;

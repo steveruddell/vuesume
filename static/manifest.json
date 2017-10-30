@@ -2,7 +2,6 @@
   "name": "Vuesume",
   "short_name": "Vuesume",
   "lang": "en-GB",
-  "start_url": "/",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#3273dc"

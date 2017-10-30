@@ -1,55 +1,30 @@
-<template>
-  <div>
-    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-
-        <a class="navbar-item has-text-centered is-primary" v-on:click="openPage('/')">
-          <span class="icon">
-            <i class="fa fa-home"></i>
-          </span>
-          <span>{{this.$store.getters.getName}}</span>
-        </a>
-
-        <button class="button navbar-burger is-info" id="nav-toggle" v-on:click="menuVisible = !menuVisible" :class="{'is-active': menuVisible}">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      <div class="navbar-menu"  id="nav-menu" :class="{'is-active': menuVisible}">
-      <div class="navbar-start">
-        <a class="navbar-item has-text-centered" v-on:click="menuVisible = !menuVisible, openPage('/education')">Education</a>
-        <a class="navbar-item has-text-centered" v-on:click="menuVisible = !menuVisible, openPage('/employment')">Employment</a>
-        <a class="navbar-item has-text-centered" v-on:click="menuVisible = !menuVisible, openPage('/portfolio')">Portfolio</a>
-        <a class="navbar-item has-text-centered" v-on:click="menuVisible = !menuVisible, openPage('/other')">Other</a>
-      </div>
-      </div>
-    </nav>
-
-    <section class="section">
-      <div class="container">
-      <HeaderView class="is-hidden-touch"></HeaderView>
-      <transition name="fade" mode="out-in">
-        <router-view></router-view>
-      </transition>
-      </div>
-    </section>
-    <FooterView></FooterView>
-  </div>
-</template>
+<template src="../static/theme/base/mainpage.html"></template>
 
 <script>
-import HeaderView from '@/components/HeaderComponent.vue'
-import FooterView from '@/components/FooterComponent.vue'
-import vitae from '../static/cv.json'
+import ProfileView from '@/components/ProfileComponent.vue'
+import BiographyComponent from '@/components/BiographyComponent.vue'
+import EducationComponent from '@/components/EducationComponent.vue'
+import EmploymentComponent from '@/components/EmploymentComponent.vue'
+import HonorsComponent from '@/components/HonorsComponent.vue'
+import SkillsComponent from '@/components/SkillsComponent.vue'
+import PortfolioComponent from '@/components/PortfolioComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import LanguagesComponent from '@/components/LanguagesComponent.vue'
 export default {
   name: 'top-page',
   components: {
-    HeaderView,
-    FooterView
+    ProfileView,
+    BiographyComponent,
+    EducationComponent,
+    EmploymentComponent,
+    HonorsComponent,
+    SkillsComponent,
+    PortfolioComponent,
+    LanguagesComponent,
+    FooterComponent
   },
   created () {
-    this.$store.commit('setCV', vitae)
+    this.$store.dispatch('loadCV')
   },
   data () {
     return {
@@ -57,23 +32,16 @@ export default {
     }
   },
   methods: {
-    openPage (path) {
-      this.$router.push(path)
+    displaySection (title) {
+      return this.$store.getters.displaySection(title)
     }
   }
 }
 </script>
 
-<style scoped>
-.navbar {
-  z-index: 1000;
-}
-.navbar-menu {
-  z-index: 1000;
-}
-.navbar-item:hover {
-  color: whitesmoke;
-  background-color: #235ebc;
+<style>
+body {
+  font-family: 'Raleway', sans-serif;
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .33s

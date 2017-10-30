@@ -1,24 +1,11 @@
-<template>
-
-<div class="content">
-  <h1 class="uk-heading-line"><span>Skills</span></h1>
-
-    <dl v-for="skill in skills">
-      <dt>
-        <i class="icon fa" v-bind:class="skill.icon"></i> {{skill.name}}
-      </dt>
-      <dd>
-        {{skill.description}}
-      </dd>
-    </dl>
-</div>
+<template src="../../static/theme/base/skills.html">
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      skills: this.$store.getters.getSection('skills')
+  computed: {
+    skills () {
+      return this.$store.getters.getSection('skills')
     }
   }
 }
