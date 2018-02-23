@@ -1,38 +1,38 @@
 {
   "theme": "base",
-  "pageTitle": "Dennis Russell - CV",
+  "pageTitle": "Steven Ruddell - CV",
   "showMenu": true,
   "profile": {
-    "firstname": "Dennis",
-    "lastname": "Russell",
+    "firstname": "Steven",
+    "lastname": "Ruddell",
     "brief": "Instructor, Political Scientist, and Football Watcher.",
     "image": "./static/profile.jpg",
     "details": [
       {
         "title": "Location",
-        "value": "Sendai, Japan",
+        "value": "Charlottesville, VA",
         "icon": "fa-globe"
       },
       {
         "title": "Hometown",
-        "value": "Philadelphia",
+        "value": "Charlottesville",
         "icon": "fa-map-signs"
       }
     ],
     "external": [
       {
         "title": "LinkedIn",
-        "value": "http://linkedin.com/in/dennisbovell",
+        "value": "http://linkedin.com/in/stevenruddell",
         "icon": "fa-linkedin"
       },
       {
         "title": "Github",
-        "value": "http://github.com/rasserudenisu",
+        "value": "http://github.com/steveruddell",
         "icon": "fa-github"
       },
       {
         "title": "Twitter",
-        "value": "https://twitter.com/burasseru",
+        "value": "https://twitter.com/steveruddell",
         "icon": "fa-twitter"
       },
       {
@@ -47,25 +47,6 @@
     "text": "Well-travelled university graduate. University studies focused on Japanese domestic, and international politics. Graduate studies in political science, with coursework steeped in research methods, theory, and practical application. Various experience with Javascript, Java, and Swift, plus related frameworks.",
     "headline": "About Me"
   },
-  "honors": {
-    "display": true,
-    "items": [
-      {
-        "name": "Villanova University Graduate Tuition Scholarship",
-        "start": "2015-08-24",
-        "end": "2016-05-19",
-        "auspices": "Villanova University",
-        "description": "Received during my tenure as a graduate student."
-      },
-      {
-        "name": "Peter L. and Barbara B. Hunsberger Scholarship for Study Abroad",
-        "start": "2014-01-01",
-        "end": "2014-06-01",
-        "auspices": "Millersville University",
-        "description": "Contributed towards my study abroad at Kansai Gaidai University."
-      }
-    ]
-  },
   "skills": {
     "display": true,
     "displayProgress": true,
@@ -77,7 +58,7 @@
       "icon": "fa-bug"
     },
     {
-      "name": "Java",
+      "name": ".NET (C#, VB)",
       "description": "Developed various Android apps.",
       "value": 80,
       "icon": "fa-coffee"
@@ -105,17 +86,11 @@
       "icon": "US"
     },
     {
-      "name": "Japanese",
-      "description": "Resident approxiately one year in Japan. University education & self-taught beyond.",
+      "name": "Russian",
+      "description": "Visited in high school; lived for a semester abroad. University education & self-taught beyond.",
       "value": 85,
-      "icon": "JP"
+      "icon": "RU"
     },
-    {
-      "name": "German",
-      "description": "University & self-taught.",
-      "value": 65,
-      "icon": "DE"
-    }
   ]},
   "portfolio": {
     "display": true,
