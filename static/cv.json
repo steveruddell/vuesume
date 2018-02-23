@@ -108,14 +108,37 @@
       "location": "Charlottesville, VA",
       "position": "Developer, DevOps Automation Engineer",
       "description": "Will serve as instructor for three units of Integrated English at varying levels. Additionally, will instruct the Academic Presentations course.",
-      "website": "http://www.silverchair.com"
+      "website": "http://www.silverchair.com",
+      "activity": [
+        {
+          "description": "Utilize MVC in .NET, working with UI team on contracts between View and Model."
+        },
+        {
+          "description": "Architected a custom build and deployment orchestration system combining over 200 projects into over 100 deployable artifacts."
+        },
+        {
+          "description": "Lead cross-department initiatives to automate code deployment increasing accuracy & reducing WIP."
+        },
+        {
+          "description": "Drive governance initiatives across technology and business pipelines through consensus building."
+        },
+        {
+          "description": "Organize and direct teams to ensure the efficient completion of large, difficult projects."
+        },
+        {
+          "description": "Troubleshoot system anomalies for performance degradation and inconsistencies."
+        },
+        {
+          "description": "Consistently build and deploy custom CMS platform."
+        }
+      ]
     },
     {
-      "name": "Kmart",
-      "start": "2017-01-31",
-      "end": "2017-09-04",
-      "location": "Columbia, Pennsylvania",
-      "position": "Customer Service Representative",
+      "name": "Atlantic Coast Athletic Clubs",
+      "start": "2010-01-01",
+      "end": "2011-04-15",
+      "location": "Charlottesville, VA",
+      "position": "Developer/Analyst",
       "description": "Acted as primary customer service representative in the store. Responsible for customer needs such as: returns, exchanges, check cashing, bill payments, and wire transfers. Coordinated with management for handling of cashiers and floor staff, setting up merchandise displays, and announcing and executing in-store promotions.",
       "website": "http://kmart.com"
     }

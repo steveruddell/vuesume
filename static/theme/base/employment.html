@@ -18,6 +18,26 @@
           <a class="icon fa fa-link" :href="employ.website"></a></p>
           <p class="subtitle">{{employ.position}}</p>
           <p class="has-text-justified">{{employ.description}}</p>
+          
+
+          <p class="headline activity-headline" v-on:click="toggleActivities(index)"><span><span class="icon">
+            <i class="fa fa-arrow-down"></i>
+          </span> Activies</span></p>
+
+  <transition
+    name="activity-transition"
+    enter-active-class="animated fadeInDown"
+    leave-active-class="animated fadeOutUp"
+    >
+    <div v-show="isVisible(index)">
+      <dl class="activity" v-for="activity in employ.activity">
+      <dt><span>{{activity.name}}</span> <span class="has-text-weight-light">{{activity.number}}</span></dt>
+      <dd class="activity-detail has-text-justified">{{activity.description}}</dd>
+    </dl>
+  </div>
+  </transition>
+
+
         </div>
       </div>
     </article>
