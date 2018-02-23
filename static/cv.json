@@ -88,12 +88,12 @@
     }
     ]},
     "portfolio": {
-      "display": false,
+      "display": true,
       "items": [
       {
         "name": "Vuesume",
-        "start": "2017-09-10",
-        "tagline": "CV project built with Vue and Bulma.",
+        "start": "2018-02-23",
+        "tagline": "Forked vuesme github project to practice working with Vue.js",
         "description": "The current page utilizes Vuesume. Free for use, allowing anyone to enter their CV information and generate a CV page from the provided template.",
         "website": "https://github.com/rasserudenisu/vuesume"
       }
@@ -124,6 +124,15 @@
     "display": true,
     "items": [
     {
+      "name": "Covenant Theological Seminary",
+      "end": "2007-05-01",
+      "start": "2003-06-01",
+      "location": "St Louis, MO",
+      "degree": "MDiv",
+      "website": "http://covenantseminary.edu",
+      "description": ""
+    },
+    {
       "name": "James Madison University",
       "end": "1999-05-14",
       "start": "1995-08-01",
@@ -141,15 +150,6 @@
       "degree": "BA",
       "major": "Russian Language",
       "website": "http://jmu.edu",
-      "description": ""
-    },
-    {
-      "name": "Covenant Theological Seminary",
-      "end": "2007-05-01",
-      "start": "2003-06-01",
-      "location": "St Louis, MO",
-      "degree": "MDiv",
-      "website": "http://covenantseminary.edu",
       "description": ""
     }
   ]}
