@@ -7,7 +7,6 @@ const ru = {
       skills: 'навыки',
       languages: 'языки',
       portfolio: 'портфолио',
-      honors: 'почести',
       about: 'около'
     }
   }
