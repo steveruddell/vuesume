@@ -1,6 +1,6 @@
 import en from './en.js'
-import jp from './jp.js'
+import jp from './ru.js'
 
 export const translations = {
-  en, jp
+  en, ru
 }
