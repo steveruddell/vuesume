@@ -5,7 +5,7 @@
   "profile": {
     "firstname": "Steven",
     "lastname": "Ruddell",
-    "brief": "Instructor, Political Scientist, and Football Watcher.",
+    "brief": "Inquisitive, Creative, Playful, Determined, Professional",
     "image": "./static/profile.jpg",
     "details": [
       {
@@ -107,7 +107,6 @@
       "start": "2011",
       "location": "Charlottesville, VA",
       "position": "Developer, DevOps Automation Engineer",
-      "description": "Will serve as instructor for three units of Integrated English at varying levels. Additionally, will instruct the Academic Presentations course.",
       "website": "http://www.silverchair.com",
       "activity": [
         {
@@ -139,8 +138,7 @@
       "end": "2011-04-15",
       "location": "Charlottesville, VA",
       "position": "Developer/Analyst",
-      "description": "Acted as primary customer service representative in the store. Responsible for customer needs such as: returns, exchanges, check cashing, bill payments, and wire transfers. Coordinated with management for handling of cashiers and floor staff, setting up merchandise displays, and announcing and executing in-store promotions.",
-      "website": "http://kmart.com"
+      "website": "http://acac.com"
     }
   ]},
   "education": {
@@ -163,7 +161,7 @@
       "degree": "BS",
       "major": "Computer Science",
       "website": "http://jmu.edu",
-      "description": ""
+      "description": "Go Dukes!"
     },
     {
       "name": "James Madison University",
@@ -173,7 +171,7 @@
       "degree": "BA",
       "major": "Russian Language",
       "website": "http://jmu.edu",
-      "description": ""
+      "description": "идти Dukes!"
     }
   ]}
 }
