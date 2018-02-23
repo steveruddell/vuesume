@@ -5,7 +5,6 @@ import ProfileView from '@/components/ProfileComponent.vue'
 import BiographyComponent from '@/components/BiographyComponent.vue'
 import EducationComponent from '@/components/EducationComponent.vue'
 import EmploymentComponent from '@/components/EmploymentComponent.vue'
-import HonorsComponent from '@/components/HonorsComponent.vue'
 import SkillsComponent from '@/components/SkillsComponent.vue'
 import PortfolioComponent from '@/components/PortfolioComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
@@ -17,7 +16,6 @@ export default {
     BiographyComponent,
     EducationComponent,
     EmploymentComponent,
-    HonorsComponent,
     SkillsComponent,
     PortfolioComponent,
     LanguagesComponent,

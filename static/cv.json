@@ -42,6 +42,7 @@
     "text": "Web application developer, with full-stack experience, strong organizational skills and extensive project management and leadership experience. Creative and motivated analytical thinker, able to propose practical solutions to abstract problem sets. Extensive Information Technology knowledge and experience.",
     "headline": "About Me"
   },
+
   "skills": {
     "display": true,
     "displayProgress": true,
@@ -60,13 +61,13 @@
     },
     {
       "name": "Swift",
-      "description": "Learning alongside my 8 yr old.",
+      "description": "Learning with my 8 yr old.",
       "value": 15,
       "icon": "fa-apple"
     },
     {
       "name": "Python",
-      "description": "Learning alongside my 8 yr old.",
+      "description": "Learning with my 8 yr old.",
       "value": 15,
       "icon": "fa-firefox"
     }
@@ -86,6 +87,17 @@
       "value": 85,
       "icon": "RU"
     }
+    ]},
+    "portfolio": {
+      "display": false,
+      "items": [
+      {
+        "name": "Vuesume",
+        "start": "2017-09-10",
+        "tagline": "CV project built with Vue and Bulma.",
+        "description": "The current page utilizes Vuesume. Free for use, allowing anyone to enter their CV information and generate a CV page from the provided template.",
+        "website": "https://github.com/rasserudenisu/vuesume"
+      }
   ]},
   "employment": {
     "display": true,
