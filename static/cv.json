@@ -48,7 +48,7 @@
     "items": [
     {
       "name": "Javascript",
-      "description": "Self-taught. Constructed several applications, especially with Vue.",
+      "description": "Self-taught, working through learning Vue.",
       "value": 15,
       "icon": "fa-bug"
     },
@@ -103,7 +103,7 @@
     "items": [
     {
       "name": "Silverchair Information Systems",
-      "end": "present",
+      "end": "now",
       "start": "2011",
       "location": "Charlottesville, VA",
       "position": "Developer, DevOps Automation Engineer",
@@ -138,7 +138,63 @@
       "end": "2011-04-15",
       "location": "Charlottesville, VA",
       "position": "Developer/Analyst",
-      "website": "http://acac.com"
+      "website": "http://acac.com",
+      "activity":[
+        {
+          "description":"Instituted best practices for SDLC including DSC (Git), Unit Testing and Naming Conventions."
+        },
+        {
+          "description":"Designed and deployed custom full stack, n-tiered .NET application with HTML/XML front-end, MSSQL backend for BI analysis of department head scheduling."
+        },
+        {
+          "description":"Coordinated different Information technology groups within the department to complete vendor and departmental requests."
+        },
+        {
+          "description":"Delivered customized SQL reports to business stake holders and project members."
+        }
+      ]
+    },
+    {
+      "name":"Reinsurance Group of America",
+      "start":"2008-05-15",
+      "end":"2010-04-01",
+      "location":"St Louis, MO",
+      "position":"IT Consultant, Better Business Methods, LLC",
+      "website":"http://www.rgare.com/",
+      "activity":[
+        {
+          "description":"Produced a flexible, dynamic web part for presenting Oracle db query results in SharePoint 2007."
+        },
+        {
+          "description":"Designed SQL queries to retrieve data through SharePoint 2007's Report Builder web-parts."
+        },
+        {
+          "description":"Troubleshooting of technology problems on delivered equipment."
+        },
+        {
+          "description":"Worked on dispatched calls from Help Desk to fix customer technology problems."
+        }
+      ]
+
+    },
+    {
+      "name":"Peak PACE Solutions",
+      "start":"2010-05-15",
+      "end":"2010-12-31",
+      "location":"St Louis, MO",
+      "position":"IT Specialist",
+      "website":"https://peakpacesolutions.com",
+      "activity":[
+        {
+          "description":"Spearheaded project to migrate medical record SuperBase to SaaS web app using ASP.NET in C#."
+        },
+        {
+          "description":"Directed multiple large-scale reengineering initiatives simultaneously for EMR."
+        },
+        {
+          "description":"Constructed digital models based on physician guided requirements in custom BI environment."
+        }
+      ]
     }
   ]},
   "education": {
