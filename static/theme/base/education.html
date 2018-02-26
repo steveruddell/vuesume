@@ -25,23 +25,6 @@
             <span>{{school.major}}</span>
           </p>
           <p class="has-text-justified">{{school.description}}</p>
-          <p class="headline course-headline" v-on:click="toggleCourses(index)"><span><span class="icon">
-            <i class="fa fa-arrow-down"></i>
-          </span> Coursework</span></p>
-
-  <transition
-    name="coursework-transition"
-    enter-active-class="animated fadeInDown"
-    leave-active-class="animated fadeOutUp"
-    >
-    <div v-show="isVisible(index)">
-      <dl class="course" v-for="course in school.coursework">
-      <dt><span>{{course.name}}</span> <span class="has-text-weight-light">{{course.number}}</span></dt>
-      <dd class="course-detail has-text-justified">{{course.description}}</dd>
-    </dl>
-  </div>
-  </transition>
-
         </div>
       </div>
     </article>
